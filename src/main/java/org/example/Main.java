@@ -1,19 +1,36 @@
 package org.example;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Scanner sc = new Scanner(System.in);
+        boolean trade = true;
+        Customer customer = new Customer(10000);
+        Menu menu = new Menu();
+        CoffeeType coffeeType = null;
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        while (trade) {
+            System.out.println("1.커피 주문 | 2.구매한 커피 보기 | 3.바리스타 소지금 | 4. 손님 소지금 ");
+            int cafeTrade = sc.nextInt();
+            switch (cafeTrade) {
+                case 1:
+                    int orderMoney = customer.getMoney();
+                    customer.orderCoffee(menu, orderMoney);
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 0:
+                    System.out.println("이용해주셔서 감사합니다.");
+                    trade = false;
+                    break;
+                default:
+                    System.out.println("다시 입력해주세요.");
+            }
         }
     }
 }
