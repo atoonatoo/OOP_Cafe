@@ -1,4 +1,4 @@
-package org.example.CoffeeList;
+package org.example.Cafe.CoffeeList;
 
 public interface CoffeeList {
 

@@ -1,6 +1,4 @@
-package org.example;
-
-import org.example.CoffeeList.*;
+package org.example.Cafe;
 
 import java.util.Scanner;
 

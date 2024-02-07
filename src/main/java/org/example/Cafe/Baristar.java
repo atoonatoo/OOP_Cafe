@@ -1,9 +1,4 @@
-package org.example;
-
-import org.example.CoffeeList.*;
-
-import java.util.ArrayList;
-import java.util.List;
+package org.example.Cafe;
 
 public class Baristar {
     private int balance;

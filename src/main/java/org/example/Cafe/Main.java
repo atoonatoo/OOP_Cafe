@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Cafe;
 
 import java.util.Scanner;
 
