@@ -44,11 +44,11 @@ public class Baristar {
     }
 
     private void balanceaCcumulate(int price) {
-        balance -= price;
+        balance += price;
     }
 
-    public void remainingBaristaMoney(){
-    System.out.println("바리스타 소지금 " + balance + "원");
+    public void remainingBaristaMoney() {
+        System.out.println("바리스타 소지금 " + balance + "원");
     }
 
 }
