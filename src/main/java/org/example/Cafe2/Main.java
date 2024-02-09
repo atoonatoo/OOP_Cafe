@@ -19,6 +19,7 @@ public class Main {
                     customer.order(money, baristar);
                     break;
                 case 2:
+//                    customer.drinkCoffee();
                     break;
                 case 3:
                     baristar.remainingBaristaMoney();

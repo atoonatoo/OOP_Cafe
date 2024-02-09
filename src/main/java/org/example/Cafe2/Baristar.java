@@ -32,16 +32,22 @@ public class Baristar {
             case Espresso -> coffeeList = new Espresso();
             default -> throw new IllegalStateException("다시 주문해주세요 " + coffeeType);
         }
+        String orderCoffeeName = coffeeList.getCoffeeNmae();
+        int orderPrice = coffeeList.getPrice();
 
         Coffee coffee = new Coffee();
-        coffee.setOrderCoffeeName(coffeeList.getCoffeeNmae());
-        coffee.setOrderPrice(coffeeList.getPrice());
+
+        coffee.setOrderCoffeeName(orderCoffeeName);
+        coffee.setOrderPrice(orderPrice);
+
         List coffees = new ArrayList();
         coffees.add(coffee);
-//        Coffee getCoffee1 = (Coffee) coffees.get(0);
-//        System.out.println(getCoffee1.getOrderCoffeeName() + getCoffee1.getOrderPrice());
+        Coffee getCoffee1 = (Coffee) coffees.get(0);
+        System.out.println(getCoffee1.getOrderCoffeeName() + getCoffee1.getOrderPrice());
         balanceaCcumulate(coffeeList.getPrice());
+        System.out.println("주문하신 " + coffeeList.getCoffeeNmae() + " 나왔습니다. 지불하실 비용은 " + coffeeList.getPrice() + "원 입니다.");
     }
+
 
     private void balanceaCcumulate(int price) {
         balance += price;

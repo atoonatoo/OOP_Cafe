@@ -1,5 +1,7 @@
 package org.example.Cafe2;
 
+import java.util.List;
+
 public class Customer {
 
     private int money;
@@ -17,9 +19,10 @@ public class Customer {
 
     Menu menu = new Menu();
 
-    public void order (int money, Baristar baristar) {
-      menu.coffeeMenuBoard();
-      baristar.makingCoffee(money);
+
+    public void order(int money, Baristar baristar) {
+        menu.coffeeMenuBoard();
+        baristar.makingCoffee(money);
 
     }
 
@@ -30,4 +33,10 @@ public class Customer {
     public void pay(int price) {
         money -= price;
     }
+
+
+//    public void drinkCoffee() {
+//        Coffee getCoffee1 = (Coffee) coffees.get(0);
+//        System.out.println(getCoffee1.getOrderCoffeeName() + getCoffee1.getOrderPrice());
+//    }
 }
