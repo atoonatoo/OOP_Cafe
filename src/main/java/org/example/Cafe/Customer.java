@@ -23,14 +23,14 @@ public class Customer {
         baristar.makingCoffee(money);
     }
 
-    public void remainingBaristaMoney() {
-        System.out.println("손님의 남은 소지금 " + money + "원");
-    }
 
     public void pay(int price) {
         money -= price;
     }
 
+    public void remainingBaristaMoney() {
+        System.out.println("손님의 남은 소지금 " + money + "원");
+    }
 
     public void drinkCoffee() {
 
