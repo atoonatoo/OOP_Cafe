@@ -21,6 +21,8 @@ public class Baristar {
         this.balance = balance;
     }
 
+    Customer customer = new Customer();
+
     public void makingCoffee(int money) {
         String orderInput = sc.nextLine();
         CoffeeType coffeeType = CoffeeType.valueOf(orderInput);
@@ -43,8 +45,9 @@ public class Baristar {
         List coffees = new ArrayList();
         coffees.add(coffee);
         Coffee getCoffee1 = (Coffee) coffees.get(0);
-        System.out.println(getCoffee1.getOrderCoffeeName() + getCoffee1.getOrderPrice());
         balanceaCcumulate(coffeeList.getPrice());
+        customer.pay(coffeeList.getPrice());
+
         System.out.println("주문하신 " + coffeeList.getCoffeeNmae() + " 나왔습니다. 지불하실 비용은 " + coffeeList.getPrice() + "원 입니다.");
     }
 

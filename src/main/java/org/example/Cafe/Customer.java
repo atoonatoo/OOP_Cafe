@@ -21,7 +21,6 @@ public class Customer {
     public void order(int money, Baristar baristar) {
         menu.coffeeMenuBoard();
         baristar.makingCoffee(money);
-
     }
 
     public void remainingBaristaMoney() {
@@ -33,8 +32,7 @@ public class Customer {
     }
 
 
-//    public void drinkCoffee() {
-//        Coffee getCoffee1 = (Coffee) coffees.get(0);
-//        System.out.println(getCoffee1.getOrderCoffeeName() + getCoffee1.getOrderPrice());
-//    }
+    public void drinkCoffee() {
+
+    }
 }
