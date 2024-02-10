@@ -1,8 +1,7 @@
 package org.example.Cafe.CoffeeList;
 
 public interface CoffeeList {
-
-    String getCoffeeName();
+    String getCoffeeNmae();
 
     int getPrice();
 }

@@ -1,9 +1,10 @@
 package org.example.Cafe.CoffeeList;
 
-public class Cappuchino implements CoffeeList{
+public class Cappuccino implements CoffeeList{
+
     @Override
-    public String getCoffeeName() {
-        return "Cappuchino";
+    public String getCoffeeNmae() {
+        return "카푸치노";
     }
 
     @Override

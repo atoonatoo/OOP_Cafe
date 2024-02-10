@@ -1,4 +1,4 @@
-package org.example.Cafe2.CoffeeList;
+package org.example.Cafe.CoffeeList;
 
 public class Macchiato implements CoffeeList{
     @Override
